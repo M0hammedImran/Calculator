@@ -1,0 +1,117 @@
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#474747));
+  background: linear-gradient(black, #474747);
+  font-family: "Ubuntu", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  width: 60%;
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#474747), to(black));
+  background: linear-gradient(#474747, black);
+  margin: 20px auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 3%;
+}
+
+#calculator {
+  width: 320px;
+  height: 520px;
+  background: #3f4041;
+  margin: 0 auto;
+  top: 30px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+#result-pad {
+  position: relative;
+  margin: 5px;
+  padding: 10px;
+  top: 5px;
+  width: 90%;
+  height: 140px;
+  text-align: right;
+  font-size: 30px;
+  color: black;
+  background: #d0d3d5;
+  border: none;
+  border-radius: 8px;
+}
+
+#keyboard {
+  height: 420px;
+}
+
+.operator,
+.number,
+.empty {
+  width: 50px;
+  height: 50px;
+  margin: 10px 15px;
+  float: left;
+  background: #3f4041;
+  border: 1px solid #3f4041;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.operator,
+.number {
+  cursor: pointer;
+}
+
+.number,
+.empty {
+  background: #3f4041;
+}
+
+.operator:active,
+.number:active {
+  font-size: 15px;
+  color: #303a3a;
+  background: #aaaaec;
+}
+
+.operator:focus,
+.number:focus,
+.empty:focus {
+  outline: none;
+}
+
+button:nth-child(4) {
+  font-size: 25px;
+  background: #f0dc48;
+}
+
+button:nth-child(8) {
+  font-size: 25px;
+  background: #3990bb;
+}
+
+button:nth-child(12) {
+  font-size: 25px;
+  background: #bb39aa;
+}
+
+button:nth-child(16) {
+  font-size: 25px;
+  background: #39bb83;
+}
+
+button:nth-child(20) {
+  font-size: 25px;
+  background: #7ebb39;
+}
+/*# sourceMappingURL=style.css.map */
