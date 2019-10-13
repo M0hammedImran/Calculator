@@ -1,62 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
-  background: linear-gradient(black, rgb(71, 71, 71));
-  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  background: rgb(24, 24, 24);
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
 
-#container {
-  width: 60%;
+.container {
   height: 80vh;
-  background: linear-gradient(rgb(71, 71, 71), black);
-  margin: 20px auto;
-  border: 2px solid rgba(0, 0, 0, 0);
+  width: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 3%;
+  background: rgb(77, 77, 77);
 }
 
-#calculator {
+.calculator {
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(179, 179, 179);
+  border-radius: 4%;
+}
+
+.keyboard {
   width: 320px;
-  height: 520px;
-  background: #3f4041;
-  margin: 0 auto;
-  top: 30px;
-  position: relative;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
 
-#result-pad {
-  position: relative;
-  margin: 5px;
-  padding: 10px;
-  top: 5px;
-  width: 90%;
-  height: 140px;
-  text-align: right;
-  font-size: 30px;
-  color: rgb(0, 0, 0);
-  background: #d0d3d5;
+td {
+  width: 55px;
+  height: 55px;
+}
+button {
+  margin: 10px auto;
+  height: 100%;
+  width: 100%;
   border: none;
-  border-radius: 8px;
-}
-
-#keyboard {
-  height: 420px;
-}
-
-.operator,
-.number,
-.empty {
-  width: 50px;
-  height: 50px;
-  margin: 10px 15px;
-  float: left;
-  background: #3f4041;
-  border: 1px solid #3f4041;
+  outline: none;
+  background: rgb(179, 179, 179);
   border-radius: 50%;
-  font-weight: bold;
+  font-size: 22px;
+}
+
+#result {
+  width: 280px;
+  height: 70px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: right;
+  background: rgb(191, 197, 182);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 35px;
+}
+
+.operator:active,
+.number:active {
+  background: rgb(65, 107, 129);
   font-size: 20px;
 }
 
@@ -65,45 +85,15 @@ body {
   cursor: pointer;
 }
 
-.number,
-.empty {
-  background: #3f4041;
+#color {
+  background: rgb(179, 179, 179);
 }
 
-.operator:active,
-.number:active {
-  font-size: 15px;
-  color: rgb(48, 58, 58);
-  background: rgb(170, 170, 236);
+#color:hover {
+  background: rgb(147, 151, 167);
 }
 
-.operator:focus,
-.number:focus,
-.empty:focus {
-  outline: none;
-}
-
-button:nth-child(4) {
-  font-size: 25px;
-  background: rgb(240, 220, 72);
-}
-
-button:nth-child(8) {
-  font-size: 25px;
-  background: rgb(57, 144, 187);
-}
-
-button:nth-child(12) {
-  font-size: 25px;
-  background: rgb(187, 57, 170);
-}
-
-button:nth-child(16) {
-  font-size: 25px;
-  background: rgb(57, 187, 131);
-}
-
-button:nth-child(20) {
-  font-size: 25px;
-  background: rgb(126, 187, 57);
+#color1:hover {
+  color: white;
+  background: rgb(0, 0, 0);
 }

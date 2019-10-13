@@ -1,14 +1,14 @@
 function insert(val) {
-    document.getElementById("result-pad").value += val;
+    document.getElementById('result').value += val;
 }
 
 function solve() {
-    var x = document.getElementById("result-pad").value;
-    var y = eval(x);
-    document.getElementById("result-pad").value = y;
+    let a = document.getElementById('result').value;
+    let b = eval(a);
+    document.getElementById('result').value = b;
 }
 
 function clr() {
-    document.getElementById("result-pad").value = " ";
+    document.getElementById('result').value = "";
 }
 

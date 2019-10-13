@@ -1,69 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(black), to(#474747));
-  background: linear-gradient(black, #474747);
-  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  background: #181818;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#container {
-  width: 60%;
+.container {
   height: 80vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#474747), to(black));
-  background: linear-gradient(#474747, black);
-  margin: 20px auto;
-  border: 2px solid rgba(0, 0, 0, 0);
+  width: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.211);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 3%;
+  background: #4d4d4d;
 }
 
-#calculator {
+.calculator {
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #b3b3b3;
+  border-radius: 4%;
+}
+
+.keyboard {
   width: 320px;
-  height: 520px;
-  background: #3f4041;
-  margin: 0 auto;
-  top: 30px;
-  position: relative;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bolder;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 35px;
 }
 
-#result-pad {
-  position: relative;
-  margin: 5px;
-  padding: 10px;
-  top: 5px;
-  width: 90%;
-  height: 140px;
-  text-align: right;
-  font-size: 30px;
-  color: black;
-  background: #d0d3d5;
+td {
+  width: 55px;
+  height: 55px;
+}
+
+button {
+  margin: 10px auto;
+  height: 100%;
+  width: 100%;
   border: none;
-  border-radius: 8px;
-}
-
-#keyboard {
-  height: 420px;
-}
-
-.operator,
-.number,
-.empty {
-  width: 50px;
-  height: 50px;
-  margin: 10px 15px;
-  float: left;
-  background: #3f4041;
-  border: 1px solid #3f4041;
+  outline: none;
+  background: #b3b3b3;
   border-radius: 50%;
-  font-weight: bold;
+  font-size: 22px;
+}
+
+#result {
+  width: 280px;
+  height: 70px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: right;
+  background: #bfc5b6;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 35px;
+}
+
+.operator:active,
+.number:active {
+  background: #416b81;
   font-size: 20px;
 }
 
@@ -72,46 +112,16 @@ body {
   cursor: pointer;
 }
 
-.number,
-.empty {
-  background: #3f4041;
+#color {
+  background: #b3b3b3;
 }
 
-.operator:active,
-.number:active {
-  font-size: 15px;
-  color: #303a3a;
-  background: #aaaaec;
+#color:hover {
+  background: #9397a7;
 }
 
-.operator:focus,
-.number:focus,
-.empty:focus {
-  outline: none;
-}
-
-button:nth-child(4) {
-  font-size: 25px;
-  background: #f0dc48;
-}
-
-button:nth-child(8) {
-  font-size: 25px;
-  background: #3990bb;
-}
-
-button:nth-child(12) {
-  font-size: 25px;
-  background: #bb39aa;
-}
-
-button:nth-child(16) {
-  font-size: 25px;
-  background: #39bb83;
-}
-
-button:nth-child(20) {
-  font-size: 25px;
-  background: #7ebb39;
+#color1:hover {
+  color: white;
+  background: black;
 }
 /*# sourceMappingURL=style.css.map */
